@@ -33,5 +33,7 @@ Big data project using Apache Pig
     - replace this with <br>
     ```set HADOOP_BIN_PATH=%HADOOP_HOME%\libexec``` 
 1. To verify installation run the following command using powershell <br>
-    ```pig -- version``` 
+    ```pig --version``` 
+          or
+    ```pig -version```
  
