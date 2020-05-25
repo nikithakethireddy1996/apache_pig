@@ -36,4 +36,8 @@ Big data project using Apache Pig
     ```pig --version``` 
           or
     ```pig -version```
+    
+   ## Apache Pig commands
+   1. Steps to run Apache Pig in local mode  
+   ```pig -x local```
  
