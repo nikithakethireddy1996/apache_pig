@@ -1,0 +1,11 @@
+show_id,type,title,director,cast,country,date_added,release_year,rating,duration,listed_in
+81145628, Movie, Norm of the North, Alan Marriott, Antonio Banderas, United States, 9-Sep-19,2019, TV-PG, 90, Children & Family Movies
+80117401, Movie, Jandino: Whatever it Takes, Jandino Asporaat, Darren Criss, United Kingdom, 9-Sep-16,2016, TV-MA, 94, Stand-Up Comedy
+70234439, TV Show, Transformers Prime, Peter Cullen, Frank Welker, United States, 8-Sep-18, 2013, TV-Y7-FV, 120, Kids' TV
+80058654, TV Show, Transformers: Robots in Disguise, Will Friedle, Darren Criss, United States, 8-Sep-18, 2016, TV-Y7, 45, Kids' TV
+80125979, Movie, realityhigh, John Michael Higgins, Keith Powers, United States, 8-Sep-17, 2017, TV-14, 99, Stand-Up Comedy
+80163890, TV Show, Apaches, Alberto Ammann, Eloy Azorín, Spain, 8-Sep-17, 2016, TV-MA, 250, Children & Family Movies
+70304989, Movie, Automata, Gabe Ibáñez, Antonio Banderas, United States, 8-Sep-17, 2014, R, 110, Stand-Up Comedy
+80164077, Movie, Fabrizio Copano: Solo pienso en mi, Rodrigo Toro, Francisco Schultz, Chile, 8-Sep-17, 2017, TV-MA, 60, Stand-Up Comedy
+80117902, TV Show, Fire Chasers, Peter Cullen, Frank Welker, United States, 8-Sep-17, 2017, TV-MA, 112, Stand-Up Comedy
+70304990, Movie, Good People, Henrik Ruben, Kate Hudson, United States, 8-Sep-17, 2014, R, 90 min, Kids' TV
