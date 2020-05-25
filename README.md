@@ -30,7 +30,4 @@ pig-0.17.0 folder will be created
     - look for the line ```set HADOOP_BIN_PATH=%HADOOP_HOME%\bin```    
     - replace this with ```set HADOOP_BIN_PATH=%HADOOP_HOME%\libexec``` 
 1. To verify installation run ```pig - version``` using powershell
-
-## Proof of Installation of Pig:
-1. Nikitha Kethireddy's:
-<img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/Nikitha_Pig.PNG" width="600" height="300"/> 
+ 
