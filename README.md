@@ -1,7 +1,19 @@
 # Apache_Pig
 Big data project using Apache_Pig
 
-## Group B- Team members:
+## Team members Names:
+1. Sushma Yedugani
+1. Nikitha Kethireddy
+1. Deepthi Tejaswani Chokka
+1. Deepak Malempati
+
+## Team Members GitHub profile links:
+1. https://github.com/sushma95
+1. https://github.com/nikithakethireddy1996
+1. https://github.com/Deepthi1003
+1. https://github.com/Deepakmalempati
+
+## Team Members Images:
 <img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/WhatsApp%20Image%202020-05-24%20at%206.55.23%20PM.jpeg" width="200" height="300"/> <img src=https://github.com/nikithakethireddy1996/apache_pig/blob/master/IMG-2723.jpg width="200" height="300"/> <img src=https://github.com/nikithakethireddy1996/apache_pig/blob/master/WhatsApp%20Image%202020-05-24%20at%207.26.21%20PM.jpeg width="200" height="300"/> 
 
 ## Installation steps
