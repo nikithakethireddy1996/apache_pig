@@ -21,17 +21,17 @@ Big data project using Apache Pig
 Apache Pig is a platform for analyzing large data sets that consists of a high-level language for expressing data analysis programs, coupled with infrastructure for evaluating these programs. The salient property of Pig programs is that their structure is amenable to substantial parallelization, which in turns enables them to handle very large data sets.<br>
 
 ## Features of Apache-Pig:
-### ```Rich set of operators :``` <br>
+#### ```Rich set of operators :``` <br>
 Apache pig has a rich collection set of operators in order to perform operations like join, filer, and sort.
-### ```Ease of Programming :``` <br>
+#### ```Ease of Programming :``` <br>
 Pig Latin is similar to SQL so it is very easy for developers to write a Pig script. If we have knowledge of SQL language, then it is very easy to learn Pig Latin language as it is similar to SQL language.
-### ```Optimization opportunities :``` <br> 
+#### ```Optimization opportunities :``` <br> 
 In Apache pig has automatically optimized  execution of the task gets by itself, hence the programmers need to focus only on the semantics of the language.
-### ```Extensibility :``` <br> 
+#### ```Extensibility :``` <br> 
 Using the existing operators in Apache pig, users can develop their own functions to read, process, and write data.
-### ```User Define Functions :``` <br>
+#### ```User Define Functions :``` <br>
 Apache Pig provides the facility to create User-defined Functions easily in other language like java then invoke them in PigLatin Scripts.
-### ```ETL (Extract Transform Load) :``` <br>
+#### ```ETL (Extract Transform Load) :``` <br>
 Apache Pig extracts the huge data set, performs operations on huge data and dumps the data in the required format in HDFS.
 
 ## Applications of Apache-Pig:
