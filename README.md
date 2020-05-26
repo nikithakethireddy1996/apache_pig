@@ -129,10 +129,6 @@ store pwordc into 'output';
 ### Final Outcome after executing the above commands:
 <img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/Final_output.PNG" width="800" height="400"/>
 
-## References:
-1. https://beyondcorner.com/learn-apache-pig-tutorials/features-application-apache-pig/
-1. https://www.youtube.com/watch?v=DabelKGxsM4&feature=youtu.be
- 
 ### Apache Pig Commands executed by Sushma where few opertions are performed on climate.txt file.
 ### Step by step process is mentioned below:
 
@@ -220,4 +216,6 @@ DESCRIBE grouped_env;
 ## Reference:
 
 - https://pig.apache.org/docs/r0.15.0/
+- https://beyondcorner.com/learn-apache-pig-tutorials/features-application-apache-pig/
+- https://www.youtube.com/watch?v=DabelKGxsM4&feature=youtu.be
 
