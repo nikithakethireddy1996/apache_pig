@@ -86,6 +86,49 @@ grouping = group foreachlist by duration;
 lowest_duration = foreach grouping generate group, MIN(foreachlist.duration);
 dump lowest_duration;
 ```
+
+## Apache -Pig Commands for implementing WordCount by Nikitha_Kethireddy :
+Firstly, we need to save a text file containing the text for which we want to display the word count. We have saved a file called "wordcount.txt" on desktop containing the below information in it:
+```
+Apache Pig is a high-level platform for creating programs that run on Apache Hadoop.
+The language for this platform is called Pig Latin.
+Pig can execute its Hadoop jobs in MapReduce, Apache Tex, or Apache Spark. 
+```
+After saving the file we need to perform the following steps in sequence:
+1. In this step, we need to open the powershell as the administrator and in order to run pig in our local machine we use the following command:
+```
+pig -x local
+```
+### Screenshot of pig running locally:
+
+2. In this step, we need to load the data into 'pg' from the file named as 'wordcount' and we call the single field in the record 'line'. The command which we use is:
+```
+pg = load 'wordcount.txt' as (line:chararray);
+```
+3. In the third step , we need to TOKENIZE (will split the line into a field for each word) and FLATTEN (this will take the collection of records returned by TOKENIZE and produce a separate record for each one, calling the single field in the record word). For performing this, we use the command :
+```
+pigwords = foreach pg GENERATE FLATTEN(TOKENIZE(line,' ')) as word;
+```
+4. In the fourth step , we need to group them together by each word. We use the following command for performing this action:
+```
+piggrouping = GROUP pigwords by word;
+```
+5. In the fifth step , in order to count each of them, we use the following command:
+```
+pwordc = foreach piggrouping GENERATE group, COUNT(pigwords);
+```
+6. In the final step, inorder to print out the results, we use the following command:
+```
+dump pwordc;
+```
+7. If we want to store the output in a file, we use the command as follows:
+```
+store pwordc into 'output';
+```
+### Final Outcome after executing the above commands:
+
+
+
 ## References:
 1. https://beyondcorner.com/learn-apache-pig-tutorials/features-application-apache-pig/
 1. https://www.youtube.com/watch?v=DabelKGxsM4&feature=youtu.be
