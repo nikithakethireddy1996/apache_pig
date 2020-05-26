@@ -217,7 +217,6 @@ DESCRIBE grouped_env;
 
 <br>
 
-Nikki
 ## Reference:
 
 - https://pig.apache.org/docs/r0.15.0/
