@@ -81,7 +81,6 @@ foreachlist = foreach netflix_list generate show_id, title, duration;
 ```
 dump foreachlist;
 ```
-### Output screenshot
 <img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/Deepak-output2.png" width="800" height="400"/>
 1. Command to arrange movies list by shortest duration
 ```
@@ -90,7 +89,6 @@ grouping = group foreachlist by duration;
 lowest_duration = foreach grouping generate group, MIN(foreachlist.duration);
 dump lowest_duration;
 ```
-### Output screenshot
 <img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/Deepak-output3.png" width="800" height="400"/>
 
 ## Apache-Pig Commands for implementing WordCount by Nikitha_Kethireddy :
