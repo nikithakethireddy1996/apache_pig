@@ -1,0 +1,6 @@
+1949,27,hyderabad
+1950,32,bangalore
+1970,40,chennai
+1949,41,Hyderabad
+1950,36,Mumbai
+1970,11,Delhi
