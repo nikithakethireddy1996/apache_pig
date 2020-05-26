@@ -82,6 +82,7 @@ foreachlist = foreach netflix_list generate show_id, title, duration;
 dump foreachlist;
 ```
 <img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/Deepak-output2.png" width="800" height="400"/>
+
 6. Command to arrange movies list by shortest duration
 ```
 grouping = group foreachlist by duration;
@@ -216,6 +217,40 @@ DESCRIBE grouped_env;
 10. Other than the above mentioned commands there are many operaters that can be performed on our data.
 
 <br>
+
+## Apache Commands executed by Deepthi to filter and order the data based upon hours worked by the Employee
+1. Initially, I have creted a file named people.txt which contains the details of the employee.
+
+1. In order to perform operation using Apache Pig in local mode, we will be using PowerShell Window and run it as an Administrator and then type the command
+ ```
+ pig -x local
+ ```
+1. An individual will obtain the screen as displayed in the below image:
+  <img src="https://raw.githubusercontent.com/nikithakethireddy1996/apache_pig/master/Deepthi_Locally_Execute.png" width="800" height="400"/>
+
+1. We would now store the data into a variable 'employee' where employee consists of all the data necessary data which is to be loaded.
+   ```
+   employee = Load 'people.txt' using PigStorage('\t') as (empid:charArray,empname:charArray,hours:int);
+   ```
+1. The next process is to filter the data based upon number of hours worked and storing it in 'parttime' by using the command as describbed below:
+   ```
+   parttime = FILTER employee By hours<20;
+   ```
+1. Then the data thus obtained will be ordered based upon descending order of nuber of hours worked
+   ```
+   sorted = ORDER parttime By hours DESC;
+   ```
+1. The next process is to display the output. For this, instead of using the dump command, I will be using the command which is described below:
+   ```
+   store sorted into 'output';
+   ```
+   - This command is used to store the data which is present within 'sorted' into the a freshly created folder named 'output'.
+1. After successful execution of the above stated command, You can see that a new folder will be created with the obtained result.
+   <img src="https://raw.githubusercontent.com/nikithakethireddy1996/apache_pig/master/Deepthi_Final_Output.png" width="800" height="400"/>
+   
+   <img src="https://raw.githubusercontent.com/nikithakethireddy1996/apache_pig/master/Deepthi_Output_Display1.png" width="800" height="400"/>
+   
+   <img src="https://raw.githubusercontent.com/nikithakethireddy1996/apache_pig/master/Deepthi_Output_Display2.png" width="800" height="400"/>
 
 ## Reference:
 
