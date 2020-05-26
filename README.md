@@ -63,33 +63,34 @@ Apache Pig extracts the huge data set, performs operations on huge data and dump
     ```pig -version```
     
 ## Apache Pig commands executed by Deepak to sort the dataset and find minimum duration of a movie
+1. I used input.txt file which contains data of netflix movies
 1. Steps to run Apache Pig in local mode  
    ```pig -x local```
-2. Command to load new dataset into pig
+1. Command to load new dataset into pig
 ```
 netflix_list = LOAD 'input.txt' using PigStorage(',')
 AS
 (show_id:chararray,type:chararray,title:chararray,director:chararray,cast:chararray,country:chararray,date_added:chararray,release_year:chararray,rating:chararray,duration:chararray,listed_in:chararray);
 ```
 
-3. Command to retrive only ID, Title and duration coulmns from the dataset
+1. Command to retrive only ID, Title and duration coulmns from the dataset
 ```
 foreachlist = foreach netflix_list generate show_id, title, duration;
 ```
-4. Command to display the output in the grunt console.
+1. Command to display the output in the grunt console.
 ```
 dump foreachlist;
 ```
-output:
+### Output screenshot
 <img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/Deepak-output2.png" width="800" height="400"/>
-5. Command to arrange movies list by shortest duration
+1. Command to arrange movies list by shortest duration
 ```
 grouping = group foreachlist by duration;
 
 lowest_duration = foreach grouping generate group, MIN(foreachlist.duration);
 dump lowest_duration;
 ```
-output:
+### Output screenshot
 <img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/Deepak-output3.png" width="800" height="400"/>
 
 ## Apache-Pig Commands for implementing WordCount by Nikitha_Kethireddy :
