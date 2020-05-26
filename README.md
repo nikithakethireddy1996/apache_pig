@@ -62,16 +62,23 @@ Apache Pig extracts the huge data set, performs operations on huge data and dump
           or
     ```pig -version```
     
-## Apache Pig commands
+## Apache Pig commands executed by Deepak
 1. Steps to run Apache Pig in local mode  
    ```pig -x local```
 1. Command to load new dataset into pig
 ```
 netflix_list = LOAD 'input.txt' using PigStorage(',')
-  AS 
-  (show_id:chararray,type:chararray,title:chararray,director:chararray,cast:chararray,country:chararray,date_added:chararray,release_year:chararray,rating:chararray,duration:chararray,listed_in:chararray);
+AS
+(show_id:chararray,type:chararray,title:chararray,director:chararray,cast:chararray,country:chararray,date_added:chararray,release_year:chararray,rating:chararray,duration:chararray,listed_in:chararray);
 ```
-
+1. Command to retrive only ID, Title and duration coulmns from the dataset
+```
+foreachlist = foreach netflix_list generate show_id, title, duration;
+```
+1. Command to display the output in the grunt console.
+```
+dump foreachlist;
+```
 ## References:
 1. https://beyondcorner.com/learn-apache-pig-tutorials/features-application-apache-pig/
 1. https://www.youtube.com/watch?v=DabelKGxsM4&feature=youtu.be
