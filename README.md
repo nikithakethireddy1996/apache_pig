@@ -133,3 +133,91 @@ store pwordc into 'output';
 1. https://beyondcorner.com/learn-apache-pig-tutorials/features-application-apache-pig/
 1. https://www.youtube.com/watch?v=DabelKGxsM4&feature=youtu.be
  
+### Apache Pig Commands executed by Sushma where few opertions are performed on climate.txt file.
+### Step by step process is mentioned below:
+
+
+1. Firstly I have created a climate.txt file. We could chose any dataset. This is important because we need to have a data on which we are going to perform our operations.
+
+<br>
+
+2. Now we have to open Powershell here as administrator and operate are pig in local mode. The command required to run is mentioned  below:
+
+```
+pig -x local
+```
+
+<img src="piglocal.PNG" width="800" height="400"/>
+<br>
+
+3. After you run the above command, grunt shell will open for you where you have to run the below command to load data into Apache Pig from the file system (Locally) using LOAD operator of Pig Latin. 
+
+```
+env = LOAD '/USERS/s536846/Desktop/climate.txt' USING PigStorage(',')  as (year:int, temp:int, city:chararray)
+```
+<br>
+
+4. If we want to check the Schema, We have already read it into a "env" using the LOAD operator. We can verify the schema env using the below command.
+
+
+```
+DESCRIBE env;
+
+```
+<br>
+
+5.We use the Filter operator to get the details of those cities whose temperature is more than 30. The command we run is as below:
+
+```
+filtered_env = FILTER env by temp>30;
+
+
+```
+
+<br>
+
+6. Now we have to  Verify the relation filtered_env using the DUMP operator as shown below.
+
+```
+DUMP filtered_env;
+
+```
+
+<img src="pigfilter.PNG" width="800" height="400"/>
+<br>
+
+7. The GROUP operator is used to group the data in one or more relations. It collects the data having the same key. In the below command we are grouping by year.
+
+```
+grouped_env = GROUP env by year;
+
+
+```
+<br>
+
+
+8. Now we have to  Verify the relation grouped_env using the DUMP operator as shown below.
+
+```
+DUMP grouped_env;
+
+
+```
+<img src="GroupByPig.PNG" width="800" height="400"/>
+
+9. After running the above command check the schema as it looks a bit different. Must try.
+
+```
+DESCRIBE grouped_env;
+
+```
+<img src="schemaaftergrouping.PNG" width="800" height="400"/>
+
+10. Other than the above mentioned commands there are many operaters that can be performed on our data.
+
+<br>
+
+## Reference:
+
+- https://pig.apache.org/docs/r0.15.0/
+
