@@ -246,6 +246,7 @@ DESCRIBE grouped_env;
    ```
    - This command is used to store the data which is present within 'sorted' into the a freshly created folder named 'output'.
 1. After successful execution of the above stated command, You can see that a new folder will be created with the obtained result.
+
    <img src="https://raw.githubusercontent.com/nikithakethireddy1996/apache_pig/master/Deepthi_Final_Output.png" width="800" height="400"/>
    
    <img src="https://raw.githubusercontent.com/nikithakethireddy1996/apache_pig/master/Deepthi_Output_Display1.png" width="800" height="400"/>
