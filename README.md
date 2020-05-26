@@ -66,9 +66,11 @@ Apache Pig extracts the huge data set, performs operations on huge data and dump
 1. Steps to run Apache Pig in local mode  
    ```pig -x local```
 1. Command to load new dataset into pig
-```netflix_list = LOAD 'input.txt' using PigStorage(',')
+```
+netflix_list = LOAD 'input.txt' using PigStorage(',')
   AS 
-  (show_id:chararray,type:chararray,title:chararray,director:chararray,cast:chararray,country:chararray,date_added:chararray,release_year:chararray,rating:chararray,duration:chararray,listed_in:chararray);```
+  (show_id:chararray,type:chararray,title:chararray,director:chararray,cast:chararray,country:chararray,date_added:chararray,release_year:chararray,rating:chararray,duration:chararray,listed_in:chararray);
+```
 
 ## References:
 1. https://beyondcorner.com/learn-apache-pig-tutorials/features-application-apache-pig/
