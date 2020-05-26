@@ -79,6 +79,13 @@ foreachlist = foreach netflix_list generate show_id, title, duration;
 ```
 dump foreachlist;
 ```
+1. Command to arrange movies list by shortest duration
+```
+grouping = group foreachlist by duration;
+
+lowest_duration = foreach grouping generate group, MIN(foreachlist.duration);
+dump lowest_duration;
+```
 ## References:
 1. https://beyondcorner.com/learn-apache-pig-tutorials/features-application-apache-pig/
 1. https://www.youtube.com/watch?v=DabelKGxsM4&feature=youtu.be
