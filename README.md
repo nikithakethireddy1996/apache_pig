@@ -132,7 +132,7 @@ dump pwordc;
 store pwordc into 'output';
 ```
 ### Final Outcome after executing the above commands:
-<img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/Final_output.PNG" width="800" height="400"/>
+<img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/Capture5.PNG" width="800" height="400"/>
 
 ### Apache Pig Commands executed by Sushma where few opertions are performed on climate.txt file.
 ### Step by step process is mentioned below:
