@@ -16,6 +16,7 @@ Big data project using Apache Pig
 ## Demonstration video link
 1. Deepak - https://www.youtube.com/watch?v=Ehe8LmToaug
 1. Deepthi - https://youtu.be/VoxLQaeEf4c
+1. Nikitha - https://youtu.be/zHEHt1xPrAE
 
 ## Team Members Images:
 <img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/WhatsApp%20Image%202020-05-24%20at%206.55.23%20PM.jpeg" width="200" height="300"/> <img src=https://github.com/nikithakethireddy1996/apache_pig/blob/master/IMG-2723.jpg width="200" height="300"/> <img src=https://github.com/nikithakethireddy1996/apache_pig/blob/master/WhatsApp%20Image%202020-05-24%20at%207.26.21%20PM.jpeg width="200" height="300"/> <img src= https://github.com/nikithakethireddy1996/apache_pig/blob/master/WhatsApp%20Image%202020-05-24%20at%207.47.43%20PM.jpeg
