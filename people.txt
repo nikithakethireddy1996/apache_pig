@@ -1,8 +1,17 @@
 empid	empname	hours
-100	deepthi	12
-101	sdf	9
-102	jffs	15
-103	jhkdfjhf	8
-104	fuhdjvjh	7
-105	uhfhef	6
-106	hfjsk	19
+100	Deepthi	12
+101	John	47
+102	Jimmy	15
+103	Daffney	8
+104	Elijah	30
+105	Matthew	6
+106	Nathalie	27
+107	Justin	29
+108	Natasha	31
+109	Elizabeth	5
+110	Peter	19
+111	Julian	22
+112	Rica	5
+113	Mazikeen	50
+114	Priyanka	29
+
