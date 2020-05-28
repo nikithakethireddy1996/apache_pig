@@ -225,9 +225,9 @@ DESCRIBE grouped_env;
 1. Initially, I have creted a file named people.txt which contains the details of the employee.
 
 1. In order to perform operation using Apache Pig in local mode, we will be using PowerShell Window and run it as an Administrator and then type the command
- ```
- pig -x local
- ```
+  ```
+  pig -x local
+  ```
 1. An individual will obtain the screen as displayed in the below image:
   <img src="https://raw.githubusercontent.com/nikithakethireddy1996/apache_pig/master/Deepthi_Locally_Execute.png" width="800" height="400"/>
 
