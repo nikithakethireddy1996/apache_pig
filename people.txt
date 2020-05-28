@@ -1,17 +1,23 @@
-empid	empname	hours
-100	Deepthi	12
-101	John	47
-102	Jimmy	15
-103	Daffney	8
-104	Elijah	30
-105	Matthew	6
-106	Nathalie	27
-107	Justin	29
-108	Natasha	31
-109	Elizabeth	5
-110	Peter	19
-111	Julian	22
-112	Rica	5
-113	Mazikeen	50
-114	Priyanka	29
+empid	empname	age	hours
+100	Deepthi	40	12
+113	Mazikeen	45	50
+101	John	32	47
+102	Jimmy	40	12
+109	Elizabeth	24	15
+103	Daffney	18	8
+104	Elijah	40	12
+105	Matthew	30	6
+106	Nathalie	26	27
+103	Daffney	18	8
+107	Justin	33	29
+108	Natasha	44	31
+113	Mazikeen	45	50
+109	Elizabeth	24	15
+110	Peter	22	19
+105	Matthew	30	6
+111	Julian	38	22
+112	Richa	18	8
+102	Jimmy	40	12
+113	Mazikeen	45	50
+114	Priyanka	40	12
 
