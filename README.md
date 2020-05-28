@@ -13,6 +13,9 @@ Big data project using Apache Pig
 1. https://github.com/Deepthi1003
 1. https://github.com/Deepakmalempati
 
+## Demonstration video link
+1. Deepak - https://www.youtube.com/watch?v=Ehe8LmToaug
+
 ## Team Members Images:
 <img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/WhatsApp%20Image%202020-05-24%20at%206.55.23%20PM.jpeg" width="200" height="300"/> <img src=https://github.com/nikithakethireddy1996/apache_pig/blob/master/IMG-2723.jpg width="200" height="300"/> <img src=https://github.com/nikithakethireddy1996/apache_pig/blob/master/WhatsApp%20Image%202020-05-24%20at%207.26.21%20PM.jpeg width="200" height="300"/> <img src= https://github.com/nikithakethireddy1996/apache_pig/blob/master/WhatsApp%20Image%202020-05-24%20at%207.47.43%20PM.jpeg
  width="200" height="300"/> 
@@ -90,7 +93,7 @@ grouping = group foreachlist by duration;
 lowest_duration = foreach grouping generate group, MIN(foreachlist.duration);
 dump lowest_duration;
 ```
-
+<img src="https://github.com/nikithakethireddy1996/apache_pig/blob/master/Deepak-output3.png" width="800" height="400"/>
 
 ## Apache-Pig Commands for implementing WordCount by Nikitha_Kethireddy :
 Firstly, we need to save a text file containing the text for which we want to display the word count. We have saved a file called "wordcount.txt" on desktop containing the below information in it:
@@ -142,7 +145,7 @@ store pwordc into 'output';
 
 <br>
 
-2. Now we have to open Powershell here as administrator and operate are pig in local mode. The command required to run is mentioned  below:
+2. Now we have to open Powershell here as administrator and operate our pig in local mode. The command required to run is mentioned  below:
 
 ```
 pig -x local
@@ -279,4 +282,5 @@ DESCRIBE grouped_env;
 - https://beyondcorner.com/learn-apache-pig-tutorials/features-application-apache-pig/
 - https://www.youtube.com/watch?v=DabelKGxsM4&feature=youtu.be
 - https://www.tutorialspoint.com/apache_pig/apache_pig_illustrate_operator.htm
+- Kaggle dataset - https://www.kaggle.com/ruchi798/movies-on-netflix-prime-video-hulu-and-disney
 
