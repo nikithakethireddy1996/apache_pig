@@ -145,7 +145,7 @@ store pwordc into 'output';
 
 <br>
 
-2. Now we have to open Powershell here as administrator and operate are pig in local mode. The command required to run is mentioned  below:
+2. Now we have to open Powershell here as administrator and operate our pig in local mode. The command required to run is mentioned  below:
 
 ```
 pig -x local
